@@ -1,0 +1,66 @@
+﻿<?xml version="1.0"?>
+<Pipeline>
+    <Action>
+        <Type>Train</Type>
+        <ActionParams>
+            <Dataset>MNIST</Dataset>
+            <Size>25000</Size>
+        </ActionParams>
+    </Action>
+    <Action>
+        <Type>Test</Type>
+        <ActionParams>
+            <Dataset>MNIST</Dataset>
+            <Size>5000</Size>
+        </ActionParams>
+    </Action>
+    <Action>
+        <Type>CompareTopology</Type>
+        <ActionParams>
+            <Target>Some Topology</Target>
+            <Scoring>Some scoring</Scoring>
+        </ActionParams>
+    </Action>
+    <Action>
+        <Type>Damage</Type>
+        <ActionParams>
+            <Type>Trauma</Type>
+            <Ratio>0.2</Ratio>
+            <CellTypes>Inner,Sensor</CellTypes>
+            <Target>Random</Target>
+        </ActionParams>
+    </Action>
+    <Action>
+        <Type>Test</Type>
+        <ActionParams>
+            <Dataset>MNIST</Dataset>
+            <Size>5000</Size>
+        </ActionParams>
+    </Action>
+    <Action>
+        <Type>Neurogenesis</Type>
+        <ActionParams>
+            <Pharma>some pharma</Pharma>
+            <Time>1000000</Time>
+            <Stimulus>
+                <Exist>True</Exist>
+                <Dataset>MNIST</Dataset>
+                <Size>5000</Size>
+            </Stimulus>
+        </ActionParams>
+    </Action>
+    <Action>
+        <Type>Test</Type>
+        <ActionParams>
+            <Dataset>MNIST</Dataset>
+            <Size>5000</Size>
+        </ActionParams>
+    </Action>
+    <Action>
+        <Type>CompareTopology</Type>
+        <ActionParams>
+            <Target>Some Topology</Target>
+            <Scoring>Some scoring</Scoring>
+        </ActionParams>
+    </Action>
+</Pipeline>
