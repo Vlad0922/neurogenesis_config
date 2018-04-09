@@ -1,29 +1,15 @@
 ﻿<?xml version="1.0"?>
 <Pipeline>
-    <Action type="train">
-        <ActionParams dataset="MNIST" size="25000"/>
+    <Action id="0" mode="Learning" type="train" dataset="MNIST" size="25000"/>
+    <Action id="1" mode="Learning" type="test" dataset="MNIST" size="5000"/>
+    <Action id="2" mode="CompareTopology" target="SomeTarget" scoring="SomeScoring"/>
+    <Action id="3" mode="Damage" type="Trauma" ratio="0.2" cellTypes="Inner,Decision" target="Random"/>
+    <Action id="4" mode="Learning" type="test" dataset="MNIST" size="5000"/>
+    <Action id="5" mode="Neurogenesis" pharma="SomePharma" time="10000000">
+        <SubActions>
+            <Action id="0" mode="Learning" type="train" dataset="MNIST" size="25000"/>
+        </SubActions>
     </Action>
-    <Action type="test">
-        <ActionParams dataset="MNIST" size="5000"/>
-    </Action>
-    <Action type="CompareTopology">
-        <ActionParams target="SomeTarget" scoring="SomeScoring"/>
-    </Action>
-    <Action type="Damage">
-        <ActionParams type="Trauma" ratio="0.2" cellTypes="Inner,Decision" target="Random"/>
-    </Action>
-    <Action type="Test">
-        <ActionParams dataset="MNIST" size="5000"/>
-    </Action>
-    <Action type="Neurogenesis">
-        <ActionParams pharma="SomePharma" time="10000000">
-            <Stimulus dataset="MNIST" size="25000"/>
-        </ActionParams>
-    </Action>
-    <Action type="Test">
-        <ActionParams dataset="MNIST" size="5000"/>
-    </Action>
-    <Action type="CompareTopology">
-        <ActionParams target="SomeTopology" scoring="SomeScoring">
-    </Action>
+    <Action id="6" mode="Learning" type="test" dataset="MNIST" size="5000"/>
+    <Action id="7" mode="CompareTopology" target="SomeTarget" scoring="SomeScoring"/>
 </Pipeline>
