@@ -25,6 +25,7 @@ public class Main {
 
             Map xmlMap = parser.parseXML();
 
+
             List actions = (List)((HashMap)xmlMap.get("Pipeline")).get("Action");
 
             NeurogenesisPipeline p = new NeurogenesisPipeline(actions);

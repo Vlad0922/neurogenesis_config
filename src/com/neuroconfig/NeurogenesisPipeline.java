@@ -7,7 +7,7 @@ import java.util.function.Consumer;
 
 public class NeurogenesisPipeline {
     static private Map<String, Consumer<Map>> nameToMethod;
-    List actions;
+    private List actions;
 
     NeurogenesisPipeline(List acts) {
         initializeMap();
@@ -90,6 +90,4 @@ public class NeurogenesisPipeline {
 
         return true;
     }
-
-
 }

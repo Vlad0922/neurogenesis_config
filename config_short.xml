@@ -1,0 +1,29 @@
+﻿<?xml version="1.0"?>
+<Pipeline>
+    <Action type="train">
+        <ActionParams dataset="MNIST" size="25000"/>
+    </Action>
+    <Action type="test">
+        <ActionParams dataset="MNIST" size="5000"/>
+    </Action>
+    <Action type="CompareTopology">
+        <ActionParams target="SomeTarget" scoring="SomeScoring"/>
+    </Action>
+    <Action type="Damage">
+        <ActionParams type="Trauma" ratio="0.2" cellTypes="Inner,Decision" target="Random"/>
+    </Action>
+    <Action type="Test">
+        <ActionParams dataset="MNIST" size="5000"/>
+    </Action>
+    <Action type="Neurogenesis">
+        <ActionParams pharma="SomePharma" time="10000000">
+            <Stimulus dataset="MNIST" size="25000"/>
+        </ActionParams>
+    </Action>
+    <Action type="Test">
+        <ActionParams dataset="MNIST" size="5000"/>
+    </Action>
+    <Action type="CompareTopology">
+        <ActionParams target="SomeTopology" scoring="SomeScoring">
+    </Action>
+</Pipeline>
